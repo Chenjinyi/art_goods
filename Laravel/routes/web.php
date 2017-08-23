@@ -18,5 +18,5 @@ Route::get('/','IndexController@index');
 //注册 登陆
 Auth::routes();
 
-//后台管理
-Route::get('/admin', 'HomeController@index')->name('home');
+//个人中心
+Route::get('/home', 'HomeController@index')->name('home');

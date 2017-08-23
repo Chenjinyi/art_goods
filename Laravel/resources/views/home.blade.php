@@ -1,17 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@section('header')
+    <h1 class="page-header">
+        仪表盘 <small>Welcome  {{Auth::user()->name}}  !</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">仪表盘</li>
+    </ol>
 @endsection
+
